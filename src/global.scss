@@ -1,17 +1,11 @@
-$primary: #2D4263;
+$primary: #2c3e50;
 $light: #E8EEF1;
 $dark: #191919;
 $red: #C84B31;
 $tan: #ECDBBA;
 $navbar-color: rgba(163, 163, 163, .2);
 $text-header-color: black;
-$text-paragraph-color: #616161;
+$text-paragraph-color: #878787;
+$navbar_height: 8rem;
 
-* {
-    scroll-behavior: smooth;
-    /* Hide scrollbar for Chrome, Safari and Opera */
-    &::-webkit-scrollbar {
-        display: none;
-    }
-    scrollbar-width: none;  /* Firefox */
-}
+

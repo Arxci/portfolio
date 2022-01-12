@@ -1,5 +1,139 @@
 @import '../../global.scss';
 
 .home {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     background-color: $tan;
+    z-index: 1;
+    position: relative;
+
+    .skewed {
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: $primary;
+        transform: skewY(-15deg);
+        transform-origin: top left;
+    }
+
+    .circle_one {
+        top: -20rem;
+        left: -20rem;
+        position: absolute;
+        background-color: $tan;
+        border-radius: 50%;
+        width: 50%;
+        height: auto;
+        padding-top: 50%;
+    }
+
+    .circle_two {
+        top: -2rem;
+        right: 50rem;
+        position: absolute;
+        background-color: $red;
+        border-radius: 50%;
+        width: 20%;
+        height: auto;
+        padding-top: 20%;
+    }
+
+    .circle_three {
+        top: 5rem;
+        right: 45rem;
+        position: absolute;
+        background-color: $tan;
+        border-radius: 50%;
+        width: 10%;
+        height: auto;
+        padding-top: 10%;
+    }
+    
+    .content {
+        z-index: 2;
+        height: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transform: translateY(100px);
+        animation: SlideUp 2000ms 1000ms ease forwards;
+        opacity: 0;
+        overflow: visible;
+
+        .text_container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            height: 100%;
+            overflow: visible;
+            
+            h1 { 
+                font-size: 80px;
+                color: $text-header-color;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                overflow: visible;
+                
+                a {
+                    color: $red;
+                    padding-left: 1rem;
+                    cursor: pointer;
+                    text-decoration: none;
+                    transition: transform 250ms ease, padding-left 250ms ease;
+                }
+
+                a:hover {
+                    transform: scale(1.1);
+                    padding-left: 1.5rem;
+                }
+            }
+    
+            p {
+                padding-top: 1rem;
+                font-size: 40px;
+                color: $text-paragraph-color;
+                overflow: visible;
+                
+                a {
+                    cursor: pointer;
+                    position: relative;
+                    text-decoration: none;
+                    color: inherit;
+                    transition: transform 250ms ease;
+                }
+
+                a::after {
+                    content: '';
+                    position: absolute;
+                    background-color: $red;
+                    width: 100%;
+                    height: 0.25rem;
+                    bottom: -0.5rem;
+                    left: 0;
+                    transform: scaleX(0);
+                    transform-origin: right;
+                    transition: transform 250ms ease;
+                }
+    
+                a:hover::after {
+                    transform: scaleX(1);
+                    transform-origin: left;
+                }
+            }
+        }
+    }
+}
+
+@keyframes SlideUp {
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
