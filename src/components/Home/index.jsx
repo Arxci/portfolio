@@ -1,12 +1,10 @@
 import './style.scss';
 
-export default function Home({ navbarIndex, setNavbarIndex }) {
+export default function Home({ setNavbarIndex }) {
     return (
         <div className='home' id="home">
             <div className='skewed' />
             <div className="circle_one" />
-            <div className="circle_two" />
-            <div className="circle_three" />
             <div className="content">
                 <div className="text_container">
                     <h1>

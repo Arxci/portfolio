@@ -13,8 +13,8 @@ export default function App() {
     <div className="app">
       <Navbar navbarIndex={navbarIndex} setNavbarIndex={setNavbarIndex}/>
       <div className="sections">
-        <Home navbarIndex={navbarIndex} setNavbarIndex={setNavbarIndex}/>
-        <About/>
+        <Home setNavbarIndex={setNavbarIndex}/>
+        <About setNavbarIndex={setNavbarIndex}/>
         <Portfolio/>
         <Contact />
       </div>
