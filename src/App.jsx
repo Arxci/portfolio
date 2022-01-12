@@ -16,7 +16,7 @@ export default function App() {
         <Home setNavbarIndex={setNavbarIndex}/>
         <About setNavbarIndex={setNavbarIndex}/>
         <Portfolio/>
-        <Contact />
+        <Contact/>
       </div>
     </div>
   );

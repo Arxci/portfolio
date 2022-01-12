@@ -2,6 +2,7 @@ import './style.scss'
 import '../../assets/css/all.css';
 
 export default function About({ setNavbarIndex }) {
+
     return (
         <div className='about' id="about">
             <div className="skewed"/>

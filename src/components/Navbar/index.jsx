@@ -25,7 +25,7 @@ export default function Navbar ({ navbarIndex, setNavbarIndex }){
                     </div>
                     <div onClick={() => setNavbarIndex(2)} className={navbarIndex === 2 ? 'navbar_button active' : 'navbar_button'}>
                         <a href="#portfolio">
-                            Portfolio
+                            Projects
                         </a>
                     </div>
                     <div onClick={() => setNavbarIndex(3)} className={navbarIndex === 3 ? 'navbar_button active' : 'navbar_button'}>

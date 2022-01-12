@@ -37,10 +37,10 @@
         height: 50%;
         display: flex;
         justify-content: center;
+        opacity: 0;
         align-items: center;
         transform: translateY(100px);
         animation: SlideUp 2000ms 1000ms ease forwards;
-        opacity: 0;
         overflow: visible;
 
         .text_container {

@@ -10,7 +10,7 @@ export default function Home({ setNavbarIndex }) {
                     <h1>
                         Hello, my name is
                         <a href="#about" onClick={() => setNavbarIndex(1)}>
-                            Garrett
+                            Garrett.
                         </a>
                     </h1>
                     <p>
